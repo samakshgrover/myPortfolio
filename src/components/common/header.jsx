@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
 
-import { Logo } from "./logo";
+// import { Logo } from "./logo";
+import Logo from "../../assets/image/logo.png";
 
 import "./header.css";
 import { Container } from "./container";
@@ -53,7 +54,7 @@ const Header = () => {
         <div className="header">
           <div className="logo">
             <h1>
-              <Logo />
+              <img src={Logo} alt="logo" style={{ height: "50px" }} />
             </h1>
           </div>
           <div onClick={() => setMobileNav(!mobileNav)} className="mobile-nav">
@@ -85,7 +86,7 @@ const Header = () => {
                 className="btn-download"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/zonayedpca/zonayed.me/raw/master/src/data/file/MyResume.pdf"
+                href="https://drive.google.com/file/d/121baA4_aWf6_G2oM1ugu-iG1VsljqnsS/view?usp=sharing"
               >
                 Resume
               </a>
